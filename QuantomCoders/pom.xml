@@ -119,116 +119,13 @@
 			<artifactId>org.springframework.web.portlet</artifactId>
 			<version>3.1.0.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.web.struts</groupId>
-			<artifactId>org.springframework.web.struts</artifactId>
-			<version>3.1.0.RELEASE</version>
-		</dependency>
-		
-	
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-			<version>4.2.1-redhat-1</version>
-			<scope>provided</scope>
-		</dependency>
 
+	
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.2.1</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.6</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-pool</groupId>
-			<artifactId>commons-pool</artifactId>
-			<version>1.6</version>
-			<scope>provided</scope>
-		</dependency>
-		 <dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-all</artifactId>
-			 <version>1.6.0</version>
-			<!-- <version>1.9.0</version> -->
-			<scope>provided</scope>
-		</dependency> 
-		<dependency>
-			<groupId>javax.ws.rs</groupId>
-			<artifactId>jsr311-api</artifactId>
-			<version>1.1.1</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>net.jcip</groupId>
-			<artifactId>jcip-annotations</artifactId>
-			<version>1.0</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.16</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.6.1</version>
-			<scope>provided</scope>
-		</dependency>
-		
-		
-		<dependency>
-			<groupId>org.jboss.spec.javax.servlet</groupId>
-			<artifactId>jboss-servlet-api_3.0_spec</artifactId>
-			<version>1.0.1.Final-redhat-1</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jaxrs</artifactId>
-			<version>2.3.6.Final-redhat-1</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.jboss.spec.javax.servlet.jsp</groupId>
-			<artifactId>jboss-jsp-api_2.2_spec</artifactId>
-			<version>1.0.1.Final-redhat-2</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.cryptonode.jncryptor</groupId>
-			<artifactId>jncryptor</artifactId>
-			<version>1.0.1</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils</artifactId>
-			<version>1.8.3.redhat-6</version>
-			<scope>provided</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.6.1</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-					<groupId>org.jboss</groupId>
-					<artifactId>jboss-common-core</artifactId>
-					<version>2.2.17.GA</version>
-					<scope>provided</scope>
-		</dependency>
-		
 	</dependencies>
 </project>
