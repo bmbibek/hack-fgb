@@ -1,0 +1,11 @@
+/*** Main style goes there ***/
+@import url("html_style.css");
+
+.option-head .brand-logo {
+	background-image: url('../../img/ribbon-logo-usa.png');
+}
+
+.brand-logo,
+.musthead .brand-logo {
+	background-image: url('../../img/emirates_logo_us.png');
+}

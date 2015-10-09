@@ -1,0 +1,12 @@
+/*** Main style goes there ***/
+/* Commenting as this is already included in header.jsp*/
+/*@import url("html_style.css");*/
+
+.option-head .brand-logo {
+	background-image: url('../img/ribbon-logo-usa.png');
+}
+
+.brand-logo,
+.musthead .brand-logo {
+	background-image: url('../img/emirates_logo_us.png');
+}

@@ -1,0 +1,253 @@
+/*** Main style goes there ***/
+/* Commenting as this is already included in header.jsp*/
+/*@import url("html_style.css");*/
+
+/*** Russian language style goes there ***/
+/*.btn-row div span {
+	font-size: 1rem;
+}*/
+
+.chackbox-row.right .chekbox-label span {
+    width: auto;
+    max-width: 50%;
+    white-space: nowrap;
+}
+
+.upcoming-details .add-flight-info .cell:first-child {
+    width: 28%;
+}
+.upcoming-details .add-flight-info .cell:nth-child(2n) {
+    width: 45%;
+}
+
+/*** Media query for iPhone 5 ***/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation:portrait) {
+   	.btn-row div span {
+		font-size: 1rem;
+	}
+
+    .booking-steps.five-step span.first, .booking-steps.five-step span.last {
+        width: 1.75rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 1.25rem;
+    }
+}
+
+/*** Media query for iPhone 4 ***/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait) {
+    .btn-row div span {
+		font-size: 1rem;
+	}
+
+    .booking-steps.five-step span.first, .booking-steps.five-step span.last {
+        width: 1.75rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 1.25rem;
+    }
+}
+
+/* Fix for Tabs Russian/German/French */
+.switch-button.reduce_fs,
+.gray-button.reduce_fs {
+    font-size: 0.73rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.gray-button.reduce_fs span {
+    padding: 0; 
+}
+
+.passenger-flight-info .info-row .fl-left {
+    max-width: 20rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .navigation-head .navigation-body .grid-nav a {
+        font-size: 0.8rem;
+    }
+    
+    .passenger-flight-info .info-row .fl-left {
+        max-width: 10rem;
+    }
+}
+
+/* Fix for the legend in the seat selector */
+.expandable-info-box .cell {
+    width: 50%;
+    max-width: 50%;
+}
+@media (min-width:320px) {
+    .expandable-info-box .cell span:last-child {
+        width: 6rem;
+    }
+}
+
+/* Fix for homepage buttons for longer languages */
+.btn-row a span,
+.btn-row div span {
+    display: block;
+    width: auto;
+    margin-top: 10px;
+}
+.btn-row a, 
+.btn-row div {
+    text-align: center;
+}
+.btn-row .el {
+    margin-right: 0px;
+}
+/* Fix for the modify button */ 
+.head-bar .modify {
+    max-width: 29%;
+}
+/* Fix for homepage welcome text */ 
+.welcome-bar-msg {
+    white-space: normal;
+    padding-left: 0.5rem;
+}
+.welcome-bar-btn {
+    padding-right: 0.5rem;
+}
+.user-bar {
+    padding: 0.5rem 0rem;
+}
+.user-bar .user-info {
+    padding-left: 0.5rem;
+}
+.user-bar .account-info {
+    padding: 0 0.5rem;
+}
+
+.passenger-flight-info .passenger-label strong {
+    max-width: 10.5rem;
+}
+/*** Russian language style goes there ***/
+/*.btn-row div span {
+	font-size: 1rem;
+}*/
+
+.chackbox-row.right .chekbox-label span {
+    width: auto;
+    max-width: 50%;
+    white-space: nowrap;
+}
+
+.upcoming-details .add-flight-info .cell:first-child {
+    width: 28%;
+}
+.upcoming-details .add-flight-info .cell:nth-child(2n) {
+    width: 45%;
+}
+
+/*** Media query for iPhone 5 ***/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation:portrait) {
+   	.btn-row div span {
+		font-size: 1rem;
+	}
+
+    .booking-steps.five-step span.first, .booking-steps.five-step span.last {
+        width: 1.75rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 1.25rem;
+    }
+}
+
+/*** Media query for iPhone 4 ***/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait) {
+    .btn-row div span {
+		font-size: 1rem;
+	}
+
+    .booking-steps.five-step span.first, .booking-steps.five-step span.last {
+        width: 1.75rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 1.25rem;
+    }
+}
+
+/* Fix for Tabs Russian/German/French */
+.switch-button.reduce_fs,
+.gray-button.reduce_fs {
+    font-size: 0.73rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.gray-button.reduce_fs span {
+    padding: 0; 
+}
+
+.passenger-flight-info .info-row .fl-left {
+    max-width: 20rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .navigation-head .navigation-body .grid-nav a {
+        font-size: 0.8rem;
+    }
+    
+    .passenger-flight-info .info-row .fl-left {
+        max-width: 10rem;
+    }
+}
+
+/* Fix for the legend in the seat selector */
+.expandable-info-box .cell {
+    width: 50%;
+    max-width: 50%;
+}
+@media (min-width:320px) {
+    .expandable-info-box .cell span:last-child {
+        width: 6rem;
+    }
+}
+
+/* Fix for homepage buttons for longer languages */
+.btn-row a span,
+.btn-row div span {
+    display: block;
+    width: auto;
+    margin-top: 10px;
+}
+.btn-row a, 
+.btn-row div {
+    text-align: center;
+}
+.btn-row .el {
+    margin-right: 0px;
+}
+/* Fix for the modify button */ 
+.head-bar .modify {
+    max-width: 29%;
+}
+/* Fix for homepage welcome text */ 
+.welcome-bar-msg {
+    white-space: normal;
+    padding-left: 0.5rem;
+}
+.welcome-bar-btn {
+    padding-right: 0.5rem;
+}
+.user-bar {
+    padding: 0.5rem 0rem;
+}
+.user-bar .user-info {
+    padding-left: 0.5rem;
+}
+.user-bar .account-info {
+    padding: 0 0.5rem;
+}
+
+.passenger-flight-info .passenger-label strong {
+    max-width: 10.5rem;
+}
+
+/*Fare Families */
+div.switch-module a.switch-button.fs-28 {
+	font-size: 0.77rem !important;
+}

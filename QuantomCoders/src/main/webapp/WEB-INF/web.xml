@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>EkMobility</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+		<description>
+			this filter is used to remove the cross site scripts in the request parameter
+		</description>
+		<filter-name>XSSFilter</filter-name>
+		<filter-class>com.mercator.ibe.mobile.common.crosssitescription.XSSFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>XSSFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+<filter>
+    <filter-name>imagesCache</filter-name>
+    <filter-class>com.samaxes.filter.CacheFilter</filter-class>
+    <init-param>
+        <param-name>static</param-name>
+        <param-value>true</param-value>
+    </init-param>
+    <init-param>
+        <param-name>expirationTime</param-name>
+        <param-value>15552000</param-value>
+    </init-param>
+</filter>
+<filter>
+    <filter-name>cssCache</filter-name>
+    <filter-class>com.samaxes.filter.CacheFilter</filter-class>
+    <init-param>
+        <param-name>expirationTime</param-name>
+        <param-value>15552000</param-value>
+    </init-param>
+</filter>
+<filter>
+    <filter-name>jsCache</filter-name>
+    <filter-class>com.samaxes.filter.CacheFilter</filter-class>
+    <init-param>
+        <param-name>private</param-name>
+        <param-value>true</param-value>
+    </init-param>
+    <init-param>
+        <param-name>expirationTime</param-name>
+        <param-value>15552000</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>cssCache</filter-name>
+    <url-pattern>*.css</url-pattern>
+</filter-mapping>
+ 
+<filter-mapping>
+    <filter-name>jsCache</filter-name>
+    <url-pattern>*.js</url-pattern>
+    <url-pattern>*.jsxhtml</url-pattern>
+</filter-mapping>
+ 
+<filter-mapping>
+    <filter-name>imagesCache</filter-name>
+    <url-pattern>*.png</url-pattern>
+    <url-pattern>*.gif</url-pattern>
+    <url-pattern>*.jpg</url-pattern>
+</filter-mapping>
+  <servlet>
+    <servlet-name>spring</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet> 
+  <servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>*.xhtml</url-pattern>
+    <url-pattern>*.jsxhtml</url-pattern>
+  </servlet-mapping>  
+  <servlet>
+    <servlet-name>CommonStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.common.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>HomeStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.home.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>FSStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.fs.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+   <servlet>
+    <servlet-name>MyAccountStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.myaccount.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>TimeTableStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.timetable.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>OLCIStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.olci.mobile.servlets.StartupServletOLCI</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+   <servlet>
+    <servlet-name>MYBStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.myb.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>MABStartupServletIBE</servlet-name>
+    <servlet-class>com.mercator.ibe.mab.mobile.servlets.StartupServletIBE</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>StartupServletLocalOffice</servlet-name>
+    <servlet-class>com.mercator.ibe.localOffices.mobile.servlets.StartupServletLocalOffice</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+   <servlet>
+    <servlet-name>sessionhandler</servlet-name>
+    <servlet-class>com.mercator.ibe.common.mobile.servlets.SessionHandlerServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sessionhandler</servlet-name>
+    <url-pattern>/sessionHandler</url-pattern>
+  </servlet-mapping>
+	<filter> 
+	  <filter-name>GzipFilter</filter-name> 
+	  <filter-class>com.cj.gzipflt.GzipFilter</filter-class> 
+	  <init-param> 
+	    <param-name>mimeInclude</param-name> 
+	    <param-value>text/plain,text/html,text/xml</param-value> 
+	  </init-param> 
+	</filter>
+	<filter-mapping> 
+	  <filter-name>GzipFilter</filter-name> 
+	  <url-pattern>/*</url-pattern> 
+	</filter-mapping>
+  <error-page>
+		<error-code>404</error-code>
+		<location>/404Redirect.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/500Redirect.jsp</location>
+	</error-page>
+	<session-config>
+	 	<cookie-config>
+	 		 <http-only>true</http-only>
+		 </cookie-config>
+		 <session-timeout>30</session-timeout>
+	</session-config>	
+
+	<security-constraint>
+	<web-resource-collection>
+		<web-resource-name>Test</web-resource-name>
+		<description>An example security config that only allows users with the
+         role JBossAdmin to access the HTML JMX console web application
+       </description>
+		<url-pattern>/*</url-pattern>
+	</web-resource-collection>
+	<auth-constraint>
+		<role-name>admin</role-name>
+	</auth-constraint>
+	</security-constraint>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>ekmobileqa login</realm-name>
+	</login-config>
+
+	<security-role>
+		<role-name>admin</role-name>
+	</security-role>  
+
+</web-app>

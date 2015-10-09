@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.0">
+   <deployment>
+       <dependencies>
+		   <module name="org.apache.xerces"/>
+		   <module name="org.apache.commons.collections"/>
+		   <module name="org.jboss.common-core"/>
+		   <module name="org.jboss.common-core"/>
+		   <module name="com.google.guava"/>
+		   <module name="org.codehaus.jackson.jackson-core-asl"/>		   
+		   <module name="org.codehaus.jackson.jackson-mapper-asl"/>
+		</dependencies>
+   </deployment>
+</jboss-deployment-structure>

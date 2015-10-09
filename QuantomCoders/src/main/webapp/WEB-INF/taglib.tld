@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib
+    xsi:schemaLocation=
+    "http://java.sun.com/xml/ns/javaee web-jsptaglibrary_2_1.xsd"    xmlns="http://java.sun.com/xml/ns/javaee"     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"     version="2.1">
+	 
+		<!-- taglib descriptor -->
+		<tlib-version>1.0</tlib-version>
+		<short-name>EKMobileTL</short-name>
+		<description>Tag library for Web forms-based applications</description>
+	<function>
+			<name>getMessage</name> 
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getMessage(java.lang.String, java.lang.String, java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+    <function>
+		<name>encodeHTML</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String encodeHTML(java.lang.String)</function-signature>
+	</function>
+		<function>
+			<name>getLocale</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getLocale(javax.servlet.jsp.PageContext)</function-signature>
+		</function>
+	<function>
+		<name>getFullLocale</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getFullLocale(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>reaplaceValue</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String reaplaceValue(java.lang.String, java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>replaceValue</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String replaceValue(java.lang.String, java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>getCountryCode</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getCountryCode(javax.servlet.jsp.PageContext)</function-signature>
+	</function>	
+	<function>
+		<name>getCountryLangName</name> 
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getCountryLangName(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getRegionNameForOmniture</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getRegionNameForOmniture(javax.servlet.jsp.PageContext, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getRegionNameForGAGTM</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getRegionNameForGAGTM(javax.servlet.jsp.PageContext, java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getSkywardProfileVO</name>
+		<function-class>com.mercator.ibe.common.mobile.util.SkywardJstlUtil</function-class>
+		<function-signature>com.mercator.ibe.mobile.myaccount.SkywardProfileVO getSkywardProfileVO()</function-signature>
+	</function>
+	<function>
+		<name>getMainSiteURL</name> 
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getMainSiteURL(java.lang.String, java.lang.String, java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getSkywardsMemId</name> 
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getSkywardsMemId(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getDate</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getDate(javax.servlet.jsp.PageContext)</function-signature>
+	</function>	
+	
+	<function>
+			<name>isDateMatched</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>boolean isDateMatched(java.lang.String, java.lang.String)</function-signature>
+		</function>
+	<function>
+			<name>getHoursBetween</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getHoursBetween(java.lang.String, java.lang.String, java.lang.String, java.lang.String,java.lang.String,java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>getHoursDiff</name>
+			<name>getHoursDifferenceWithOffset</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getHoursDiff(java.lang.String, java.lang.String, java.lang.String, java.lang.String,java.lang.String,java.lang.String)</function-signature>
+			<function-signature>String getHoursDifferenceWithOffset(java.lang.String, java.lang.String, java.lang.String, java.lang.String,java.lang.String,java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>formatDate</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String formatDate(java.lang.String, java.lang.String, java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+		<function>
+			<name>formatDateWithoutLang</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String formatDate(java.lang.String, java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>getDateFormat</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getDateFormat(java.lang.String, java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>getFullDate</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getFullDate(java.lang.String, java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getFullDateForSchedule</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getFullDateForSchedule(java.lang.String, java.lang.String, java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getFullDatewithToFormat</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getFullDatewithToFormat(java.lang.String, java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>removeBeginZero</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String removeBeginZero(java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>convertIntToString</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String convertIntToString(int)</function-signature>
+	</function>
+	<function>
+			<name>getFormatedSequenceNo</name> 
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getFormatedSequenceNo(java.lang.String, java.lang.Integer, java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>formatFlightNumber</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String formatFlightNumber(java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>getFormatedFlightNo</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getFormatedFlightNo(java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>formatTime</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String formatTime(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getGlobalContent</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getGlobalContent(java.lang.String, java.lang.String, java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>toLowerCaseString</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String toLowerCaseString(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getFormattedLoungeName</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getFormattedLoungeName(java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getCommaSeparatedChars</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getCommaSeparatedChars(java.lang.String)</function-signature>
+	</function>
+	<function>
+		<name>getLocaleBasedMonths</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getLocaleBasedMonths(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getLocaleBasedShortMonths</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getLocaleBasedShortMonths(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getLocaleBasedShortDays</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getLocaleBasedShortDays(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getDuration</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getDurationLocale(java.lang.String,java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+		<name>getCabinClass</name>
+		<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+		<function-signature>String getCabinClassLocale(java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getURLForLocale</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getURLForLocale(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getLeadTimeInDays</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getLeadTimeInDays(java.lang.String,java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>collectionContains</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>boolean collectionContains(java.util.Set,java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getNoOfDecimal</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getNoOfDecimalConfig(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getRoundOFF</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getRoundOFFConfig(javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>formatNumber</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>java.math.BigDecimal formatNumber(java.lang.String,java.lang.String,java.lang.String)</function-signature>
+	</function>
+	<function>
+			<name>convertAmountCultureBased</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>java.lang.String convertAmountCultureBased(java.math.BigDecimal,java.lang.String,java.lang.String,java.lang.String)</function-signature>
+	</function>
+	<!-- Wrapper method to format currency. Uses NumberFormatter Logic -->
+	<function>
+			<name>formatAmountCultureBased</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>java.lang.String formatAmountCultureBased(javax.servlet.jsp.PageContext, java.lang.String,boolean,boolean, java.lang.String)</function-signature>
+	</function>	
+	<function>
+			<name>formatClassBrandType</name>
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>java.lang.String formatClassBrandType(java.lang.String,java.lang.String,java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+	</function>
+	<function>
+			<name>getNumberFormatter</name> 
+			<function-class>com.mercator.ibe.mobile.taglib.MobileUtil</function-class>
+			<function-signature>String getNumberFormatter(java.lang.String)</function-signature>
+	</function>	
+	<function>
+			<name>getSiteUrl</name> 
+			<function-class>com.mercator.ibe.mobile.taglib.SiteURL</function-class>
+			<function-signature>String getSiteUrl(java.lang.String, javax.servlet.jsp.PageContext)</function-signature>
+	</function>	
+	
+		<tag>
+			<name>I18N</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.I18N</tag-class>
+			<body-content>empty</body-content> 
+			<description>I18N tag lib</description>
+			<attribute>
+				<name>key</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>baseName</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>params</name>
+				<required>FALSE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>I18NURL</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.I18NURL</tag-class>
+			<body-content>empty</body-content>
+			<description>I18NURL tag lib</description>
+			<attribute>
+				<name>key</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>baseName</name>
+				<required>TRUE</required>
+			</attribute>
+			<attribute>
+				<name>params</name>
+				<required>FALSE</required>
+			</attribute>
+		</tag>
+		<tag>
+			<name>Date</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.Date</tag-class>
+			<body-content>empty</body-content>
+			<description>Date helper tag lib</description>
+			<attribute>
+				<name>iSO8601Date</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>format</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>FlightNumber</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.FlightNumber</tag-class>
+			<body-content>empty</body-content>
+			<description>Pad flight number</description>
+			<attribute>
+				<name>minLength</name>
+				<required>FALSE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>flightNumber</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>NumberFormatter</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.NumberFormatter</tag-class>
+			<body-content>empty</body-content>
+			<description>Decimal Number Formatter</description>
+			<attribute>
+				<name>noOfDecimals</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>currency</name>
+				<required>true</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>format</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>roundOffConfig</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>CClass</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.CabinClass</tag-class>
+			<body-content>empty</body-content>
+			<description>Cabin class tag lib</description>
+			<attribute>
+				<name>key</name>
+				<required>true</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>baseName</name>
+				<required>true</required>
+			</attribute>
+		</tag>
+		<tag>
+			<name>SkywardJstl</name>
+			<tag-class>com.mercator.ibe.common.mobile.util.SkywardJstlUtil</tag-class>
+			<body-content>empty</body-content>
+			<description>Skyward JSTL class tag lib</description>
+			<attribute>
+				<name>key</name>
+				<required>true</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>Duration</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.TimeHourMinute</tag-class>
+			<body-content>empty</body-content>
+			<description>Duration tag lib</description>
+			<attribute>
+				<name>key</name>
+				<required>true</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>baseName</name>
+				<required>true</required>
+			</attribute>
+			<attribute>
+				<name>params</name>
+				<required>false</required>
+			</attribute>
+			<attribute>
+				<name>format</name>
+				<required>true</required>
+			</attribute>
+		</tag>
+		<tag>
+			<name>VersionControl</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.VersionControl</tag-class>
+			<body-content>empty</body-content>
+			<description>Version Control for caching</description>
+			<attribute>
+				<name>groupName</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>CityTag</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.CityTag</tag-class>
+			<body-content>empty</body-content>
+			<description>show origin to destination cites</description>
+			<attribute>
+				<name>params</name>
+				<required>true</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>arrowDirection</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>searchType</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>tableClass</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>tableCellClass</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>paddingleftClass</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+			<attribute>
+				<name>paddingRightClass</name>
+				<required>false</required>
+				<rtexprvalue>true</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>getSiteURL</name>
+			<tag-class>com.mercator.ibe.mobile.taglib.SiteURL</tag-class>
+			<body-content>empty</body-content>
+			<description>Url mapping</description>
+			<attribute>
+				<name>mappingName</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+		</tag>
+		<tag>
+			<name>QubitTag</name>
+			<tag-class>com.mercator.ibe.common.mobile.util.QubitTag</tag-class>
+			<body-content>empty</body-content>
+			<description>Qubit tag for open tag</description>
+			<attribute>
+				<name>moduleName</name>
+				<required>TRUE</required>
+				<rtexprvalue>TRUE</rtexprvalue>
+			</attribute>
+		</tag>
+	</taglib>
