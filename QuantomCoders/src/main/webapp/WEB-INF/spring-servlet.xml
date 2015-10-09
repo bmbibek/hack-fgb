@@ -10,28 +10,13 @@
         http://www.springframework.org/schema/context/spring-context-3.1.xsd">
  
     <context:component-scan
-        base-package="com.mercator.ibe.common.mobile.controller,com.mercator.ibe.home.mobile.controller,com.mercator.ibe.fs.mobile.controller,com.mercator.ibe.myaccount.mobile.controller,com.mercator.ibe.timetable.mobile.controller,com.mercator.ibe.olci.mobile.controller,com.mercator.ibe.myb.mobile.controller,com.mercator.ibe.mab.mobile.controller,com.mercator.ibe.localOffices.mobile.controller" />
+        base-package="com.decode.fdb.controller" />
         <!-- I18N Start-->
         <bean id="messageSource"
 		    class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		    <property name="basename" value="classpath:messages" />
 		    <property name="defaultEncoding" value="UTF-8"/>
 		</bean>
-		
-	<bean id="sessionExpireInterceptor" class="com.mercator.ibe.common.mobile.interceptor.SessionExpireHandlerInterceptor">
-       <property name="SessionExempted">
-			<list value-type="java.lang.String">
-				<value>/**/languageselector.xhtml*</value>
-				<value>/**/home.xhtml*</value>
-				<value>/**/boardingPass.xhtml*</value>
-			</list>
-		</property>
-    </bean>	
-		 
-	<bean id="localeHanlderInterceptor" class="com.mercator.ibe.common.mobile.interceptor.LocaleHandlerInterceptor" />	
-	
-	<!-- Interceptor which is used to prepare SEO canonical urls etc -->
-	<bean id="seoInterceptor" class="com.mercator.ibe.common.mobile.interceptor.SEOInterceptor" />	
 	
 	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
 		<property name="cookieName" value="localeCookie" />
@@ -50,30 +35,8 @@
 		</property>
 	</bean> 
 	
-	<bean id="mobileInterceptor" class="com.mercator.ibe.common.mobile.interceptor.ViewTypeInterceptor"
-        init-method="init">
-        <property name="mobileUserAgents">
-          <list value-type="java.lang.String">
-          	<!--<value>.*(iphone|ipod|ipad).*</value>
-            <value>.*(andriod|Safari).*</value>
-            <value>.*(andriod).*</value>
-            <value>.*(kindle|pocket|o2|vodaphone|wap|midp|psp).*</value>
-            <value>.*(blackberry|opera mini).*</value>
-          --></list>
-        </property>
-    </bean>
-    <!--  <bean id="sslInterceptor" class="com.mercator.ibe.mobile.common.interceptor.SslInterceptor">
-		<property name="secureLocations">
-			<list value-type="java.lang.String">
-				<value>*/**/*xhtml*</value>
-			</list>
-		</property>
-	</bean>  -->
- 	<!--<bean class="com.mercator.ibe.mobile.view.MobileViewResolver">
-		<property name="jspResolver" ref="viewResolver" />
-		 property name="tilesResolver" ref="tilesViewResolver" / 
-	</bean>
-    --><bean id="viewResolver"
+	
+    <bean id="viewResolver"
         class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass"
             value="org.springframework.web.servlet.view.JstlView" />
